@@ -12,7 +12,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = os.getenv('DEBUG', '').lower() in ('true', '1')
 
 ALLOWED_HOSTS = ['*']
-CSRF_TRUSTED_ORIGINS = ['https://*', 'http://*']
+CSRF_TRUSTED_ORIGINS = ['https://*', 'http://*', 'https://api.xwear.antoxer.ru']
 CORS_ORIGIN_ALLOW_ALL = True
 
 INSTALLED_APPS = [
