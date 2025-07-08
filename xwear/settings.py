@@ -15,8 +15,10 @@ ALLOWED_HOSTS = ['*']
 CSRF_TRUSTED_ORIGINS = ['https://*', 'http://*', 'https://api.xwear.antoxer.ru']
 CORS_ORIGIN_ALLOW_ALL = True
 
-USE_X_FORWARDED_HOST = True
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+USE_X_FORWARDED_HOST = True
 
 INSTALLED_APPS = [
     'products',
