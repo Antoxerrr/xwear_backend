@@ -18,6 +18,7 @@ CORS_ORIGIN_ALLOW_ALL = True
 INSTALLED_APPS = [
     'products',
     'users',
+    'colorfield',
     'phonenumber_field',
     'django_filters',
     'drf_spectacular',
